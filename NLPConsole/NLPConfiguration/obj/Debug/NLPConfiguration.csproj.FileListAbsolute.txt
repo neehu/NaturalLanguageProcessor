@@ -1,0 +1,7 @@
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.pdb
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.csprojResolveAssemblyReference.cache
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.pdb
