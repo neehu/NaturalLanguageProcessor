@@ -1,26 +1,29 @@
-{
-  "verbs": [
-    "show",
-    "list",
-    "get",
-    "search",
-    "look",
-    "explore"
-  ],
-  "keywords":
-  [
-    "restaurant",
-    "restaurants",
-    "hotel",
-    "hotels",
-    "eating house",
-    "eating houses",
-    "eating place",
-    "eating places"
-  ],
-  "nouns":
-  [
-    "mayras",
-    "empire"
+[
+  {
+    "intentName": "SearchRestuarants",
+    "Action":  "SearchRestuarants",
+    "verbs": [
+      "show",
+      "list",
+      "get",
+      "search",
+      "look",
+      "explore"
+    ],
+    "keywords": [
+      "restaurant",
+      "restaurants",
+      "hotel",
+      "hotels",
+      "eating house",
+      "house",
+      "houses",
+      "place",
+      "places"
+    ],
+    "nouns": [
+      "mayras",
+      "empire"
     ]
-}
+  }
+]
