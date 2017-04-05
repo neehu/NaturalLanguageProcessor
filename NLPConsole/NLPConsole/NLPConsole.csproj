@@ -51,7 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NLPConfiguration\NLPConfiguration.csproj">
+<<<<<<< HEAD
       <Project>{ff918d08-492f-4e57-9144-8bcacad35e39}</Project>
+=======
+      <Project>{FF918D08-492F-4E57-9144-8BCACAD35E39}</Project>
+>>>>>>> 1afe406d04c92a7cee59eb5e4a4be09a8bbc88b6
       <Name>NLPConfiguration</Name>
     </ProjectReference>
   </ItemGroup>

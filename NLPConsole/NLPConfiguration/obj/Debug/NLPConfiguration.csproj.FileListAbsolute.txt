@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.dll
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.pdb
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\Newtonsoft.Json.dll
@@ -5,3 +6,12 @@ C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPCo
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.csprojResolveAssemblyReference.cache
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.dll
 C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.pdb
+=======
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\NLPConfiguration.pdb
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.csprojResolveAssemblyReference.cache
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.dll
+C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConfiguration\obj\Debug\NLPConfiguration.pdb
+>>>>>>> 1afe406d04c92a7cee59eb5e4a4be09a8bbc88b6
