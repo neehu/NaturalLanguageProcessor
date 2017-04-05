@@ -10,7 +10,9 @@ namespace NLPConfiguration
     {
         public static string loadConfigurationFile( string filePath)
         {
-           return  System.IO.File.ReadAllText(filePath);
+            string NLP = System.IO.File.ReadAllText(filePath);
+
+            return "ok";
         }
     }
 }
