@@ -1,1 +1,2 @@
 C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\bin\Debug\NLPConsole.exe.config
+C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\bin\Debug\NLPConsole.exe.config
