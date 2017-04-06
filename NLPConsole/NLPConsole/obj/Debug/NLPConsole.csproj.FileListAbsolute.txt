@@ -9,3 +9,5 @@ C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPCons
 C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\obj\Debug\NLPConsole.csprojResolveAssemblyReference.cache
 C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\obj\Debug\NLPConsole.exe
 C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\obj\Debug\NLPConsole.pdb
+C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\obj\Debug\NLPConsole.exe
+C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConsole\NLPConsole\obj\Debug\NLPConsole.pdb
