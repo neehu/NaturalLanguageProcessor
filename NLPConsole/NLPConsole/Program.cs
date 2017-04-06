@@ -11,9 +11,9 @@ namespace NLPConsole
     {
         static void Main(string[] args)
         {
-            NLP nlp= new NLP();
-            Console.WriteLine("Please Enter the file path for Configuration file");
-           Console.WriteLine(nlp.loadConfigurationFile(Convert.ToString(Console.ReadKey())));         
+            NLP nlp = new NLP();
+            nlp.loadConfigurationFile(Convert.ToString(Console.ReadKey()));
+            nlp.getMatchedIntetnt("Search Restaraunts Nearby");
         }
     }
 }
