@@ -60,7 +60,7 @@ namespace NLPConfiguration
             var matchingIntents = from i in this.RulesConfigurations
                                   where ProcessForMatch(i, words)
                                   select i;
-
+            
             if (matchingIntents.Any())
             {
                 var matchingEntity = matchingIntents.FirstOrDefault();
@@ -105,21 +105,34 @@ namespace NLPConfiguration
         private Dictionary<string, List<string>> ProcessForEntities(List<Entity> entities, List<string> words)
         {
             Dictionary<string, List<string>> parameters = new Dictionary<string, List<string>>();
+            var priceRange = ProcessForPriceRange(string.Join(" ", words));
+            List<string> prices = new List<string>();
+            prices.Add(priceRange);
             entities.ForEach(entity => {
                 var matches = from w in words
                               where entity.Values.Contains(w)
-                              select w;
-
+                                     select w;
+               
+               
                 parameters.Add(entity.Name, matches.ToList());
+                if(entity.Name== "pricerange")
+                parameters[entity.Name].Add(priceRange);
+             
+
             });
             
-           
+
+
             if (parameters.Count() > 0)
                 return parameters;
             else
                 return null;
         }
-
+        private string ProcessForPriceRange(string words)
+        {
+            var firstPriceValue = Regex.Match(words, @"between [0-9][0-9] to [0-9][0-9]");
+            return firstPriceValue.Value;
+        }
 
     }
 }

@@ -40,6 +40,13 @@
           "indian",
           "american"
         ]
+      },
+      {
+        "name": "pricerange",
+        "values": [
+          "between /d to /d",        
+          "within /d to /d",
+        ]
       }
     ]
   }
