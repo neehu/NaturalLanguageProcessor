@@ -1,8 +1,7 @@
-
 [
   {
     "intentName": "SearchRestuarants",
-    "Action":  "SearchRestuarants",
+    "Action": "SearchRestuarants",
     "verbs": [
       "show",
       "list",
@@ -22,9 +21,26 @@
       "place",
       "places"
     ],
-    "nouns": [
-      "mayras",
-      "empire"
+    "entities": [
+      {
+        "name": "location",
+        "values": [
+          "whitefield",
+          "richmond",
+          "jayanagar",
+          "brigade",
+          "indiranagar"
+        ]
+      },
+      {
+        "name": "cuisine",
+        "values": [
+          "chinese",
+          "japanese",
+          "indian",
+          "american"
+        ]
+      }
     ]
   }
 ]

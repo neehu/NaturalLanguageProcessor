@@ -1,5 +1,4 @@
-﻿
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,16 +20,25 @@ namespace NLPConfiguration
         [JsonProperty(PropertyName = "keywords")]
         public List<string> Keywords { get; set; }
 
-        [JsonProperty(PropertyName = "nouns")]
-        public List<string> Nouns { get; set; }
+        [JsonProperty(PropertyName = "entities")]
+        public List<Entity> Entities { get; set; }
 
         [JsonProperty(PropertyName = "action")]
         public string Action { get; set; }
     }
 
+    public class Entity
+    {
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "values")]
+        public List<string> Values { get; set; }
+    }
+
     public class IntentResult
     {
-        public List<string> Parameter { get; set; }
+        public Dictionary<string, List<string>> Parameters { get; set; }
         public string Action { get; set; }
     }
 
@@ -45,6 +53,7 @@ namespace NLPConfiguration
 
         public IntentResult GetMatchingIntent(string speechText)
         {
+
             List<string> words = speechText.Split(' ').ToList();
 
             //For each config
@@ -53,7 +62,16 @@ namespace NLPConfiguration
                                   select i;
 
             if (matchingIntents.Any())
-                return new IntentResult() { Action = matchingIntents.FirstOrDefault().Action, Parameter = null };
+            {
+                var matchingEntity = matchingIntents.FirstOrDefault();
+                var parameters = ProcessForEntities(matchingEntity.Entities, words);
+
+                return new IntentResult()
+                {
+                    Action = matchingEntity.Action,
+                    Parameters = parameters
+                };
+            }
             else
                 return null;
         }
@@ -65,6 +83,7 @@ namespace NLPConfiguration
             if (ProcessForKeywords(intentConfiguration.Keywords, words))
                 if (ProcessForKeywords(intentConfiguration.Verbs, words))
                     result = true;
+
 
             return result;
         }
@@ -82,5 +101,25 @@ namespace NLPConfiguration
 
             return result;
         }
+
+        private Dictionary<string, List<string>> ProcessForEntities(List<Entity> entities, List<string> words)
+        {
+            Dictionary<string, List<string>> parameters = new Dictionary<string, List<string>>();
+            entities.ForEach(entity => {
+                var matches = from w in words
+                              where entity.Values.Contains(w)
+                              select w;
+
+                parameters.Add(entity.Name, matches.ToList());
+            });
+            
+           
+            if (parameters.Count() > 0)
+                return parameters;
+            else
+                return null;
+        }
+
+
     }
 }

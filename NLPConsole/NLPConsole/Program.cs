@@ -23,7 +23,15 @@ namespace NLPConsole
 
 
                 if (intentResult != null)
-                    Console.Write("Awesome, I will get it done. Action: " + intentResult.Action);
+                {
+                    Console.WriteLine("Awesome, I will get it done.");
+                    Console.WriteLine("Action: " + intentResult.Action);
+                    foreach (var paramter in intentResult.Parameters)
+                    {
+                        Console.WriteLine("Parameter Name: " + paramter.Key);
+                        Console.WriteLine("Parameter Values: " + string.Join(", ", paramter.Value));
+                    }
+                }
                 else
                     Console.Write("Sorry, I do not understand that.");
                 Console.ReadLine();
