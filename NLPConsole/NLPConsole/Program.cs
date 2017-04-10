@@ -13,7 +13,7 @@ namespace NLPConsole
         static void Main(string[] args)
         {
             NaturalLanguageProcessor nlp = new NaturalLanguageProcessor();
-            nlp.LoadConfigurationFile(@"C:\Users\Neeharika.Pathuri\Documents\NaturalLanguageProcessor\NLPConfiguration.json");
+            nlp.LoadConfigurationFile(@"C:\Users\Harshvardhan.Poddar\Documents\NaturalLanguageProcessor\NLPConfiguration.json");
 
             while (true)
             {

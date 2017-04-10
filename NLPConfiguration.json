@@ -20,6 +20,7 @@
       "houses",
       "place",
       "places"
+      
     ],
     "entities": [
       {
@@ -44,8 +45,18 @@
       {
         "name": "pricerange",
         "values": [
-          "between /d to /d",        
-          "within /d to /d",
+          "between /d to /d",
+          "within /d to /d"
+        ]
+      },
+      {
+        "name": "average ratings",
+        "values": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
         ]
       }
     ]

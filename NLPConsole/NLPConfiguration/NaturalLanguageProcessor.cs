@@ -83,8 +83,7 @@ namespace NLPConfiguration
             if (ProcessForKeywords(intentConfiguration.Keywords, words))
                 if (ProcessForKeywords(intentConfiguration.Verbs, words))
                     result = true;
-
-
+            
             return result;
         }
 
@@ -113,16 +112,12 @@ namespace NLPConfiguration
                               where entity.Values.Contains(w)
                                      select w;
                
-               
                 parameters.Add(entity.Name, matches.ToList());
                 if(entity.Name== "pricerange")
                 parameters[entity.Name].Add(priceRange);
              
-
             });
             
-
-
             if (parameters.Count() > 0)
                 return parameters;
             else
